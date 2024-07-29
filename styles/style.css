@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #476c9b;
-    --cor-secundaria: #ADD9F4;
-    --cor-terciaria: #101419;
-    --cor-hover: #468C98;
+    --cor-primaria: #134074;
+    --cor-secundaria: #EEF4ED;
+    --cor-terciaria: #13315C;
+    --cor-hover: #0B2545;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -23,17 +24,20 @@ body{
 .cabecalho{
     padding: 2% 0% 0% 15%;
 }
+
 .cabecalho__menu{
     display: flex;
     gap: 80px;
 }
+
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     text-decoration: none;
 }
+
 .apresentacao{
     padding: 5% 15%;
     display: flex;
@@ -41,6 +45,7 @@ body{
     justify-content: space-between;
     gap: 82px;
 }
+
 .apresentacao__conteudo{
     width: 50%;
     display: flex;
@@ -72,24 +77,27 @@ body{
     font-family: var(--fonte-secundaria);
 }
 
-.apresentacao__links{
+.apresentacao__links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    gap: 32px;
+    align-items: flex-start;
+    gap: 15px;
 }
-.apresentacao__links__subtitulo{
+
+.apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 1.5rem;
 }
-.apresentacao__links__navegacao{
+
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
     gap: 16px;
     background-color: var(--cor-terciaria);
-    width: 50%;
+    width: calc(50% - 15px);
     text-align: center;
     border-radius: 15px;
     font-size: 1.5rem;
@@ -99,15 +107,18 @@ body{
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
 }
+
 .apresentacao__links__navegacao:hover{
     background-color: var(--cor-hover);
 }
+
 .apresentacao__imagem{
     width: 50%;
     border-radius: 8px;
 }
+
 .rodape{
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
